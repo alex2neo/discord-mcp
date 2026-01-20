@@ -451,8 +451,8 @@ async def read_dm_messages(
     # Validate parameters
     if hours_back is not None and not (1 <= hours_back <= 8760):
         raise ValueError("hours_back must be between 1 and 8760 (1 year)")
-    if not (1 <= max_messages <= 1000):
-        raise ValueError("max_messages must be between 1 and 1000")
+    if not (1 <= max_messages <= 2000):
+        raise ValueError("max_messages must be between 1 and 2000")
     if not name or not name.strip():
         raise ValueError("name cannot be empty")
 
